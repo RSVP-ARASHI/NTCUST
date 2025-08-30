@@ -1,43 +1,15 @@
 git add .
-git commit -m "test commit"
+git commit -m "Revise"
 git push origin main
 
 1️⃣ git add .
 
-邏輯：把所有變更放進「暫存區（staging area）」
+代表把目前資料夾下所有修改、新增、刪除的檔案加入暫存區。
 
-Git 有三個主要區域：
-
-工作目錄 (Working Directory) → 你正在編輯的檔案。
-
-暫存區 (Staging Area / Index) → 準備要被 commit 的清單。
-
-版本庫 (Repository / HEAD) → 已經 commit 的歷史。
-
-git add . 代表把目前資料夾下所有修改、新增、刪除的檔案加入暫存區。
-
-這一步就像是：「把想存檔的東西先丟進購物車」。
-
-2️⃣ git commit -m "test commit"
-
-邏輯：把暫存區的檔案「打包成一個版本」放進本地 Git
-
-commit = 在本地 repo 建立一個新的節點（版本快照）。
-
--m "訊息" = 幫這個版本取名字（描述這次修改的原因/內容）。
+2️⃣ git commit -m "Revise"
 
 執行後，檔案就從「暫存區」→ 進入 本地 Git 歷史 (HEAD)。
 
-👉 這就像是：「把購物車結帳，產生一張收據，存進本地資料庫」。
-
 3️⃣ git push origin main
 
-邏輯：把本地的 commit 推送到 GitHub 上的遠端倉庫
-
-origin = 你跟 GitHub repo 建立的遠端別名（remote）。
-
-main = 你要推送的分支。
-
 這一步會把本地的最新 commit 同步到 GitHub。
-
-👉 這就像是：「把你本地存好的收據，寄到 GitHub 的總資料庫」。
